@@ -18,11 +18,11 @@ This is a simple web-based **Student Registration System** that allows users to 
 ## Setup Instructions
 1. Clone the repository:
    ```sh
-   git clone https://github.com/dhruvjjain/Student-Registration-System.git
+   git clone https://github.com/dhruvjjan/Student-Registration-System.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd student-registration-system
+   cd Student-Registration-System
    ```
 3. Open `index.html` in a browser.
 
