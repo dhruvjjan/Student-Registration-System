@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Student Registration System</h1>
+    <p>Register students and manage their records efficiently.</p>
+  </header>
+  <main>
+    <section class="form-container">
+      <h2>Register Student</h2>
+      <form id="studentForm">
+        <label for="name">Student Name:</label>
+        <!-- Pattern to allow only letters and spaces -->
+        <input type="text" id="name" required pattern="[A-Za-z ]+" title="Only letters and spaces allowed">
+        
+        <label for="studentID">Student ID:</label>
+        <input type="number" id="studentID" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="contact">Contact No:</label>
+        <!-- Using type 'tel' with a pattern for 10 digits -->
+        <input type="tel" id="contact" required pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+        
+        <button type="submit">Register</button>
+      </form>
+    </section>
+    
+    <section class="records-container">
+      <h2>Registered Students</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Student ID</th>
+            <th>Email</th>
+            <th>Contact No</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody"></tbody>
+      </table>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
